@@ -43,10 +43,10 @@ def fnc_modDownload(ModId, ModDir):
 		'--- End of verification ---\n'
 	)
 	#Ask if the Update should be started
-	runCode = input('Continue? y or n: ')
+	runCode = 'y'
 	if runCode == 'y':
 		os.system(cmdCommand)
-		symLink = input('Create symbolic link? y or n (default: n): ')
+		symLink = 'y'
 		#Ask if a SymbolicLink should be created
 		if symLink == 'y':
 			os.system(symbolicLink)
